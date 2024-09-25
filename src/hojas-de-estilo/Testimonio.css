@@ -18,8 +18,7 @@
   border-radius: 50%; /* Mantener la forma circular */
   object-fit: cover; /* Asegurarte de que la imagen cubra el contenedor */
   display: block;
-  margin-left: 20px; /* Ajustar si es necesario */
-  margin-top: 50px; /* Ajustar si es necesario */
+  margin: 0 auto;
 }
 
 
