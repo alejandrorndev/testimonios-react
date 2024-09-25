@@ -1,7 +1,8 @@
 .contenedor-testimonio {
-  width: 1170px;
-  height: 368px;
-  margin: 10px 10px 50px;
+  width: 90%; /* Cambiar a un porcentaje para mayor responsividad */
+  max-width: 1170px; /* Establecer un ancho máximo */
+  height: auto; /* Ajustar la altura automáticamente */
+  margin: 10px auto; /* Centrar el contenedor */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,16 +10,20 @@
   box-shadow: 0 3px 13px 1px rgb(0 0 0 / 20%);
 }
 
+
+/* Imagen del testimonio */
 .imagen-testimonio {
-  height: 60%;
-  width: auto;
-  border-radius: 50%;
-  object-fit: cover;
+  height: auto; /* Cambiar a auto para mantener la proporción */
+  max-width: 100%; /* Asegurarte de que no se desborde del contenedor */
+  border-radius: 50%; /* Mantener la forma circular */
+  object-fit: cover; /* Asegurarte de que la imagen cubra el contenedor */
   display: block;
-  margin-left: 20px;
-  margin-top: 50px;
+  margin-left: 20px; /* Ajustar si es necesario */
+  margin-top: 50px; /* Ajustar si es necesario */
 }
 
+
+/* Contenedor de texto del testimonio */
 .contenedor-texto-testimonio {
   text-align: center;
   padding: 40px;
@@ -27,6 +32,7 @@
   line-height: 1.5rem;
 }
 
+/* Estilos para el nombre, cargo y texto */
 .nombre-testimonio {
   font-size: 1.3rem;
 }
@@ -42,4 +48,16 @@
   text-align: justify;
 }
 
+/* Media Queries para testimonios */
+@media (max-width: 768px) {
+  .contenedor-testimonio {
+    width: 90%; /* Cambiar el ancho a un porcentaje */
+    flex-direction: column; /* Cambiar a disposición vertical en pantallas pequeñas */
+    height: auto; /* Ajustar la altura */
+  }
 
+  .imagen-testimonio {
+    margin-left: 0; /* Eliminar margen izquierdo en pantallas pequeñas */
+    margin-top: 20px; /* Ajustar margen superior */
+  }
+}
